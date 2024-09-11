@@ -1,0 +1,33 @@
+body {
+  background-color: gray;
+}
+.wrapper {
+  margin: 0 auto;
+}
+.slider-container {
+  padding-top: 150px;
+  padding-left: 400px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.slide {
+}
+.img-container {
+  width: 1000px;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: sticky;
+  left: 0;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.slide-text {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
