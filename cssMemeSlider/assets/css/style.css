@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 body {
   background-color: rgb(14, 14, 57);
@@ -43,10 +44,10 @@ body {
   color: white;
   font-size: 2rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: -1rem;
 }
 .pagination {
-  margin-top: -5vh;
+  margin-top: -6vh;
   margin-left: 35em;
   display: flex;
 }
@@ -84,4 +85,40 @@ input#slide2:checked ~ .pagination label[for='slide2'],
 input#slide3:checked ~ .pagination label[for='slide3'],
 input#slide4:checked ~ .pagination label[for='slide4'] {
   background-color: rgb(0, 123, 255);
+}
+
+@media (max-width: 800px) {
+  .slider-container {
+    width: 33rem;
+  }
+  .pagination {
+    margin-top: -12vh;
+    margin-left: 25em;
+  }
+  .pagination-label {
+    height: 0.6em;
+    width: 0.6em;
+  }
+  .slide-text {
+    margin-top: -2em;
+  }
+}
+
+@media (max-width: 399px) {
+  .slider-container {
+    margin-top: -7.5em;
+    width: 17rem;
+  }
+  .pagination {
+    margin-top: -15vh;
+    margin-left: 11em;
+  }
+  .pagination-label {
+    height: 0.3em;
+    width: 0.3em;
+  }
+  .slide-text {
+    margin-top: -3.5em;
+    font-size: 1rem;
+  }
 }
